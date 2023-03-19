@@ -6,5 +6,11 @@
 </head>
 <body>
 Hello World!
+<br/>
+<hr/>
+<!--!!!!!!!!Если используем CSRF токен кнопке logout нужен метод ПОСТ!!!!!!!!-->
+<form th:method="POST" th:action="@{/logout}">
+    <button>Выход пользователя</button>
+</form>
 </body>
 </html>
