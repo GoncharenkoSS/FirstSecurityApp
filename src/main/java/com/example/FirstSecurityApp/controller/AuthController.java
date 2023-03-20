@@ -1,7 +1,7 @@
 package com.example.FirstSecurityApp.controller;
 
 import com.example.FirstSecurityApp.models.Person;
-import com.example.FirstSecurityApp.servicesDB.RegistrationService;
+import com.example.FirstSecurityApp.services.RegistrationService;
 import com.example.FirstSecurityApp.util.PersonValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

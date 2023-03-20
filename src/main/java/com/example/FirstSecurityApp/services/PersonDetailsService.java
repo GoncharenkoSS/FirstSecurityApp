@@ -1,4 +1,4 @@
-package com.example.FirstSecurityApp.servicesDB;
+package com.example.FirstSecurityApp.services;
 
 import com.example.FirstSecurityApp.models.Person;
 import com.example.FirstSecurityApp.repositories.PeopleRepository;

@@ -1,9 +1,8 @@
-package com.example.FirstSecurityApp.servicesDB;
+package com.example.FirstSecurityApp.services;
 
 import com.example.FirstSecurityApp.models.Person;
 import com.example.FirstSecurityApp.repositories.PeopleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,6 +32,7 @@ public class RegistrationService {
         //Кодирование пароля
         String encodedPassword = passwordEncoder.encode(person.getPassword());
         person.setPassword(encodedPassword);
+        person.setRole("ROLE_USER");
         peopleRepository.save(person);
     }
 }
